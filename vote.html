@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vote | Online Voting System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Light Navbar to match home.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Online Voting System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="template.html">Template</a></li>
+                <li class="nav-item"><a class="nav-link" href="create.html">Create</a></li>
+                <li class="nav-item"><a class="nav-link active" href="vote.html">Vote</a></li>
+            </ul>
+            <a href="login.html" class="btn btn-danger">Login / Register</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Vote Input Form -->
+<div class="container mt-5">
+    <h2 class="mb-4">Vote Now</h2>
+    <form action="load_vote.php" method="GET" class="p-4 bg-light border rounded shadow-sm">
+        <div class="mb-3">
+            <label for="vote_id" class="form-label">Enter Voting ID</label>
+            <input type="text" name="vote_id" id="vote_id" class="form-control" required placeholder="e.g. VOTE123">
+        </div>
+        <button type="submit" class="btn btn-primary">Load Vote</button>
+    </form>
+</div>
+
+<!-- Footer to match home.html -->
+<footer class="text-center py-3 mt-5 border-top bg-white">
+    <p class="mb-1">&copy; <span id="current-year"></span> Online Voting System | Group 7</p>
+    <p class="mb-0">Developed by ENNIS LAM SI HOONG, SOU CHENG JIE, LIEW CHOON PANG & LEE XUAN YING</p>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>

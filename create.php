@@ -4,7 +4,6 @@
     <?php
     require_once 'auth.php';
     require_once 'config.php';
-    session_start();
 
     $templates = [];
     $template_query = mysqli_query($conn, "SELECT * FROM templates");

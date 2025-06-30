@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <?php
+    require_once 'auth.php';
+    ?>
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +30,6 @@
                     </ul>
                     <div class="login">
                         <?php
-                            session_start();
                             if (isset($_SESSION['username'])) {
                                 echo '<span class="greeting">Hi, ' . htmlspecialchars($_SESSION['username']) . '</span>';
                             } else {
